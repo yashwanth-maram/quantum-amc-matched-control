@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" width="940" height="400" role="img" aria-label="Quantum against matched classical accuracy for four extractors. The points fall on a ray through the origin of slope 0.641, against 0.825 for a linear head, so the loss is proportional rather than additive.">
+<style>
+  .tk  { font: 400 11px ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #64748B; text-anchor: middle; }
+  .tky { font: 400 11px ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #64748B; text-anchor: end; }
+  .pl  { font: 400 11px ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #64748B; }
+  .ttl { font: 600 17px ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #64748B; }
+  .axl { font: 500 12px ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #64748B; }
+  .big { font: 700 26px ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; }
+  .p   { font: 400 13.5px ui-sans-serif,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #64748B; }
+</style>
+<text class="ttl" x="56" y="46">Every extractor loses the same fraction, not the same amount</text>
+
+<line x1="96" y1="340" x2="366" y2="340" stroke="#64748B" stroke-opacity=".65"/>
+<line x1="96" y1="340" x2="96" y2="70" stroke="#64748B" stroke-opacity=".65"/>
+<line x1="151" y1="340" x2="151" y2="345" stroke="#64748B" stroke-opacity=".55"/><text class="tk" x="151" y="360">0.1</text><line x1="91" y1="285" x2="96" y2="285" stroke="#64748B" stroke-opacity=".55"/><text class="tky" x="86" y="289">0.1</text><line x1="206" y1="340" x2="206" y2="345" stroke="#64748B" stroke-opacity=".55"/><text class="tk" x="206" y="360">0.2</text><line x1="91" y1="230" x2="96" y2="230" stroke="#64748B" stroke-opacity=".55"/><text class="tky" x="86" y="234">0.2</text><line x1="261" y1="340" x2="261" y2="345" stroke="#64748B" stroke-opacity=".55"/><text class="tk" x="261" y="360">0.3</text><line x1="91" y1="175" x2="96" y2="175" stroke="#64748B" stroke-opacity=".55"/><text class="tky" x="86" y="179">0.3</text><line x1="316" y1="340" x2="316" y2="345" stroke="#64748B" stroke-opacity=".55"/><text class="tk" x="316" y="360">0.4</text><line x1="91" y1="120" x2="96" y2="120" stroke="#64748B" stroke-opacity=".55"/><text class="tky" x="86" y="124">0.4</text>
+<text class="axl" x="220" y="382" text-anchor="middle">matched classical accuracy</text>
+<text class="axl" x="28" y="216" text-anchor="middle" transform="rotate(-90 28 216)">quantum accuracy</text>
+
+<line x1="96" y1="340" x2="344" y2="92" stroke="#64748B" stroke-opacity=".5" stroke-width="1.4" stroke-dasharray="3 4"/>
+<text class="pl" x="292" y="96">parity</text>
+<line x1="96" y1="340" x2="344" y2="135" stroke="#00C2A8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1000" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" from="1000" to="0" dur="1.3s" begin="0.15s" fill="freeze"/></line>
+<line x1="96" y1="340" x2="344" y2="181" stroke="#7C6BF5" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1000" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" from="1000" to="0" dur="1.3s" begin="0.0s" fill="freeze"/></line>
+<g opacity="1"><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.90s" fill="freeze"/><circle cx="156" cy="301" r="5.5" fill="#7C6BF5"/><text class="pl" x="166" y="318">10 dB and up</text></g><g opacity="1"><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.03s" fill="freeze"/><circle cx="201" cy="272" r="5.5" fill="#7C6BF5"/><text class="pl" x="211" y="289">0 to 8 dB</text></g><g opacity="1"><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.16s" fill="freeze"/><circle cx="244" cy="245" r="5.5" fill="#7C6BF5"/><text class="pl" x="254" y="262">-14 to -6 dB</text></g><g opacity="1"><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.29s" fill="freeze"/><circle cx="296" cy="212" r="5.5" fill="#7C6BF5"/><text class="pl" x="306" y="229">-8 to 0 dB</text></g>
+
+<g transform="translate(452,96)">
+  <text class="p" x="0" y="0">Four extractors trained on different SNR bands,</text>
+  <text class="p" x="0" y="21">all evaluated on one fixed test set.</text>
+  <line x1="0" y1="44" x2="52" y2="44" stroke="#F2A03D" stroke-width="3"/>
+  <text class="big" x="0" y="92" fill="#00C2A8">0.825</text>
+  <text class="p"   x="86" y="92">linear head, +- 0.075</text>
+  <text class="big" x="0" y="132" fill="#7C6BF5">0.641</text>
+  <text class="p"   x="86" y="132">quantum head, +- 0.032</text>
+  <text class="p" x="0" y="178">A constant-ratio model fits these points</text>
+  <text class="p" x="0" y="199">8.6 times better than a constant-offset one,</text>
+  <text class="p" x="0" y="220">so the low-SNR deficit is proportional loss,</text>
+  <text class="p" x="0" y="241">not sensitivity to noise.</text>
+</g>
+</svg>

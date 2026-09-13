@@ -1,0 +1,10 @@
+# DeepSig corpora — not redistributed, see README
+RML2016.10a_dict.pkl
+*.hdf5
+GOLD_XYZ_OSC.0001_1024.hdf5
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+venv/
